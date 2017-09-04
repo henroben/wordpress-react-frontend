@@ -1,0 +1,134 @@
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.9);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px; /* Place content 10px from the top */
+  transition: width 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  color: #ffffff;
+
+  .inner-wrapper {
+    display: block;
+    width: 250px;
+  }
+
+  h3 {
+    padding-bottom: 5px;
+    width: 100%;
+    border-bottom: solid 1px #ffffff;
+  }
+
+  .list-group-item:first-child {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .list-group-item {
+    background-color: transparent;
+    border: 0px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+  }
+  .list-group-item:hover {
+    background-color: orange;
+  }
+}
+.sidenav:hover {
+  #menu {
+    background-color: rgba(0,0,0,0.9);
+  }
+}
+
+
+/* The navigation menu links */
+.sidenav a {
+  //padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  //font-size: 18px;
+  color: #ffffff;
+  //display: block;
+
+}
+.sidenav a:hover {
+  //padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  //font-size: 18px;
+  color: #ffffff;
+  //display: block;
+
+}
+.sidenav a:visited {
+  //padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  //font-size: 18px;
+  color: #ffffff;
+  //display: block;
+
+}
+
+.sidenav p {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #dddddd;
+  display: block;
+
+}
+
+.config-menu {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.config-menu:hover {
+  opacity: 1;
+}
+
+
+.btn-config:nth-child(2) {
+  padding-left: 15px;
+  padding-right: 0px;
+  margin-top: 2px;
+}
+.btn-config:nth-of-type(1) {
+  padding-left: 15px;
+  padding-right: 1px;
+  margin-top: 2px;
+}
+.btn-config:last-child {
+  padding-left: 1px;
+  padding-right: 0px;
+  margin-top: 2px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

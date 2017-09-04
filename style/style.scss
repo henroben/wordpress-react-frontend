@@ -1,0 +1,82 @@
+@import "partials/variables";
+@import "partials/side_menu";
+@import "partials/loader";
+
+html {
+  height: 100%;
+  background: url("./../img/HBM0003.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: background 1s;
+  background-color: #000;
+}
+
+body {
+  font-family: $text-font;
+  font-size: em(18px);
+  color: $text-color;
+  background-color: $body-background-color !important;
+  height: 100%;
+}
+
+.jumbotron {
+  margin-top: 25px;
+}
+
+.panel {
+  margin-top: 50px;
+  background-color: rgba(255,255,255,0.9) !important;
+}
+.panel-default {
+
+}
+
+.list-group-item-heading {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#menu {
+  width: 40px;
+  height: 60px;
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 18px;
+  color: #fff;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.5s;
+  transition: left 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+  .fa-bars {
+    transition: opacity 0.5s;
+    opacity: 0.5;
+  }
+}
+#menu:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.9);
+  .fa-bars {
+    opacity: 1;
+  }
+}
+
+.panel-default {
+  border-color: #000000 !important;
+
+  .panel-heading {
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+  }
+}
